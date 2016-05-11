@@ -1,0 +1,5 @@
+Django==1.9.6
+django-webpack-loader==0.3.0
+optional-django==0.3.0
+react==3.0.1
+requests==2.10.0

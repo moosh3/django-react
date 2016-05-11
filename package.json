@@ -1,0 +1,29 @@
+{
+  "name": "django-react",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "author": "Alec Cunningham",
+  "license": "MIT",
+  "scripts": {
+    "react-service": "react-service --debug --watch",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "babel": "^5.4.7",
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
+    "babel-plugin-transform-react-jsx": "^6.1.18",
+    "body-parser": "^1.14.1",
+    "node-libs-browser": "^0.5.0",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.2",
+    "react-render": "^1.1.0",
+    "react-render-service": "^0.12.4",
+    "webpack": "^1.9.8",
+    "webpack-bundle-tracker": "0.0.5",
+    "webpack-dev-server": "^1.9.0",
+    "jquery": "^2.1.3",
+    "yargs": "^3.29.0"
+  }
+}
