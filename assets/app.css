@@ -9,3 +9,46 @@ form label {
 form button {
 	margin-left: 5px;
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background: #2c3e50;
+}
+
+.filter-list {
+  margin: auto;
+  width: 300px;
+  background: #3498db;
+  border-radius: 5px;
+  border: 1px solid #196090;
+}
+.filter-list input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  border: 0;
+  font-size: 24px;
+}
+.filter-list input:focus {
+  outline: none;
+}
+.filter-list ul {
+  margin: 0;
+  padding: 0;
+}
+.filter-list ul li {
+  list-style-type: none;
+  margin: 0;
+  color: white;
+  padding: 10px 20px;
+  border-top: 1px solid #196090;
+}
+.filter-list ul li:hover {
+  background: #2980b9;
+}

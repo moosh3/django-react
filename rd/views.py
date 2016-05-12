@@ -2,7 +2,6 @@ import json
 from django.shortcuts import render
 from django.views.generic import View
 from react.render import render_component
-from django.shortcuts import render
 from django.core.urlresolvers import reverse
 # Create your views here.
 
