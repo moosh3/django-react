@@ -1,6 +1,5 @@
 var path = require("path");
 var webpack = require("webpack")
-var BundleTracker = require('webpack-bundle-tracker');
 
 var moduleOpts = {
     noParse: [
@@ -11,10 +10,6 @@ var moduleOpts = {
       {test: /\.jsx$/, exclude: /node_modules/, loader: 'babel'}
     ]
 };
-
-plugins: [
-  new BundleTracker({filename: 'webpack-stats.json'})
-],
 
 module.exports = [
   // Client side
@@ -29,7 +24,6 @@ module.exports = [
       library: 'main'
   },
   module: moduleOpts,
-  devtool: 'eval'
  },
   // Server side
  {
