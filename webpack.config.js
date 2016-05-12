@@ -25,7 +25,7 @@ module.exports = [
   },
   output: {
       path: path.resolve('./assets/bundles/'),
-      filename: "[name]-[hash].js",
+      filename: "[name].js",
       library: 'main'
   },
   module: moduleOpts,
@@ -35,12 +35,12 @@ module.exports = [
  {
     context: __dirname,
     entry: {
-      'main': ['./assets/js/components/CommentBox.jsx']
+      'main': ['./assets/components/CommentBox.jsx']
     },
     output: {
       path: path.resolve('./assets/bundles/'),
-      filename: '[name]-[hash].server.js',
+      filename: '[name].server.js',
       libraryTarget: 'commonjs2'
     },
     module: moduleOpts
-}],
+}]

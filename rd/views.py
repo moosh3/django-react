@@ -1,12 +1,35 @@
+import json
 from django.shortcuts import render
 from django.views.generic import View
 from react.render import render_component
 from django.shortcuts import render
 # Create your views here.
 
-def rendered_index(request):
+comments = []
+
+def comment_box(request):
     rendered = render_component(
-        path='assets/components/CommentBox.jsx',
-        to_static_markup=False,
+        path='bundles/main.server.js',
+        to_static_markup=True,
+        props={
+            'comments': comments,  
+        }
     )
-    return render('index.html', rendered)
+
+    context = {
+        'rendered': rendered,
+    }
+
+
+    return render(request, 'index.html', context)
+
+def comment(request):
+    if request.POST:
+        comments.append({
+            'author': request.POST.get('author', None),
+            'text': request.POST.get('text', None),
+        })
+        return HttpResponse(
+            json.dumps(comments),
+            content_type='application/json'
+        )

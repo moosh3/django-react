@@ -1,3 +1,4 @@
+{% load static %}
 <html>
 <head>
 	<title>Python + React example</title>
@@ -7,7 +8,7 @@
 <body>
 	<div class="container">
 		<h1>Python + React example</h1>
-		{{ raw rendered }}
+		<div id="content">{{ rendered }}</div>
 	</div>
 </body>
 </html>

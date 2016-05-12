@@ -4,10 +4,11 @@ class CommentForm extends React.Component {
 	render() {
 		return (
 			<form method="post" action={this.props.url}>
+			<input type="hidden" name="_xsrf" value={this.props.xsrf}/>
 				<h2>Submit a comment</h2>
 				<div className="form-group">
 					<label>
-						Your name
+						Your hello
 						<input name="author" type="text" className="form-control" placeholder="..." />
 					</label>
 				</div>

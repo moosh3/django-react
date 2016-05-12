@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 
 REACT = {
     'RENDER': True,
-    'RENDER_URL': 'http://127.0.0.1:8001/render',
+    'RENDER_URL': 'http://127.0.0.1:63578'
 }
 
 MIDDLEWARE_CLASSES = [
