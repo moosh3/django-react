@@ -45,8 +45,14 @@ var main =
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./assets/js/index\""); }());
+	module.exports = __webpack_require__(1);
 
+
+/***/ },
+/* 1 */
+/***/ function(module, exports) {
+
+	
 
 /***/ }
 /******/ ]);
