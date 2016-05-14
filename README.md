@@ -1,6 +1,7 @@
 
 
 >Apps like django-pipeline and django-compressor have done a great job with static assets. I’ve been a great fan of django-pipeline actually but I hate how they take away all the transparency in order to make things a bit magical. They are limited in what they can do by the staticfiles system. They are opaque and make it harder to debug problems. They also need companion apps for to integrate any new javascript tool like gulp or browserify. Even after having all these wrappers, the experience can be quite rough at times. Documentation and resources available for javascript tools are not directly applicable sometimes when using these wrappers. You’ve an additional layer of software and configuration to worry about or wonder how your python configuration translates to the javascript. Things can be much better. - Owais Lone
+
 ### Rendering
 
 Server-side rendering is a very simple concept -- you create a node.js server that looks for Reactjs components, renders them (usually using ```React.renderToString```) and returns the output in HTML format. This is very simple and can be implemented without the use of other packages. All that is required is a node server (```render.js```) and a ```package.json``` file with its dependencies. Babel is used as well in order to transform JSX into JS and ES6 into ES5 (letting us use 'tomorrows features, today').
