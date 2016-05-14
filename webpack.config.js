@@ -29,7 +29,7 @@ module.exports = [
  {
     context: __dirname,
     entry: {
-      'main': ['./assets/js/components/app']
+      'main': ['./assets/js/components/CommentBox.jsx']
     },
     output: {
       path: path.resolve('./assets/bundles/'),
