@@ -6,26 +6,10 @@ from react.render import render_component
 comments = []
 def index(request):
     comment_box = render_component(
-        path='js/components/CommentBox.jsx',
-        props={
-            'comments': comments,
-            'url': reverse('comment'),
-            'pollInterval': 2000
-        },
-        to_static_markup=True,
+        path='js/components/app.jsx', 
+        to_static_markup=True
     )
     context = {
-        'comment_box': comment_box,
+        'app': app,
     }
-    return render(request, 'index.html', context)
-
-def comment(request):
-    if request.method == 'POST':
-        comments.append({
-            'author': request.POST.get('author', None),
-            'text': request.POST.get('text', None),
-        })
-    return HttpResponse(
-        json.dumps(comments),
-        content_type='application/json',
-    )
+    return render(request, 'index.html', app)
