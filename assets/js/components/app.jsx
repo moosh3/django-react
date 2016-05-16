@@ -1,12 +1,7 @@
-import React from 'react';
+var React = require('react')
 
-class NavVar extends React.component {
-    render():
-        return (
-            <div>
-                <ul>{props.items}</ul>
-            </div>
-      );
-}
-
-export default NavVar
+module.exports = React.createClass({
+   render: function(){
+       return <h1>Hello, world.</h1>
+   }
+})

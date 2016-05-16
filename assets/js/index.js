@@ -1,8 +1,5 @@
-import React from "react";
+var React = require('react')
+var App = require('./app')
 
-export default (props) => {
-  React.render(
-    <CommentBox items={props.items}/>,
-    document.getElementById('content')
-  )
-}
+React.render(
+  <App/>, document.getElementById('content'))
