@@ -1,4 +1,4 @@
-{% load static %}
+{% load render_bundle from webpack_loader %}
 <html>
 <head>
 	<title>Python + React example</title>
@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 		<h1>Python + React example</h1>
-		<div id="content">{{ comment_box }}</div>
+		<div id="content">{% render_bundle 'main' %}</div>
 	</div>
 </body>
 </html>
