@@ -45,10 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rd',
-    'react',
+    'react', // python-react
     'webpack_loader',
 ]
 
+// python-react
 REACT = {
     'RENDER': True,
     'RENDER_URL': 'http://127.0.0.1:63578'
