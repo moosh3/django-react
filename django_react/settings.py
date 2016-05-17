@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rd',
     'react',
+    'webpack_loader',
 ]
 
 REACT = {
