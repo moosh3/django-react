@@ -45,15 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rd',
-    'react', // python-react
     'webpack_loader',
 ]
 
-// python-react
-REACT = {
-    'RENDER': True,
-    'RENDER_URL': 'http://127.0.0.1:63578'
-}
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
@@ -134,6 +128,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+# react-render
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
 )
