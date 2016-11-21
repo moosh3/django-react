@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Python + React example</title>
+        <link rel="stylesheet" href="{% static 'vendor/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Python + React example</h1>
+		<script src="{% static 'js/main.js' %}"></script>
+			<script>
+				(function() {
+					// In the webpack.config.js file, we specify a `library` property
+					// which allows us to define a global function that is the entry point
+					// of the bundle.
+					// Call it and pass in the same properties as on the server side.
+					app.bootstrap({{ comment_box.render_props }});
+				})();
+		</script>
+	</div>
+	</body>
+</html>
