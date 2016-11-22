@@ -1,6 +1,6 @@
 ## rendered-react-django
 
-React is a MVC framework javascript library for building user interfaces. Although tempting, the use of react wrecks an apps SEO. The package react-python allows the rendering of react components to occur on the server side. Here's the github [repository](https://github.com/markfinger/react-python) for react-python.
+React is a MVC framework javascript library for building user interfaces. Although tempting, the use of react wrecks an apps SEO. The package react-python allows the rendering of react components to occur on the server side. Here's the github [repository](https://github.com/mic159/react-render) for django-react.
 
 This project is an example of using react components using this package. It uses Material-UI to follow Google's material guidelines. It's pretty.
 
