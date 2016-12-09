@@ -94,3 +94,27 @@ node server.js
 cd ..
 manage.py runserver
 ```
+
+```HTML
+{% load render_bundle from webpack_loader %}
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Django, Webpack and ReactJS</title>
+    {% render_bundle 'main' 'css' %}
+  </head>
+  <body>
+     <!-- Using django-webpack-loader -->
+     {% render_bundle 'main' 'js' %}
+
+     <!-- react-render options below -->
+     {{ my_component }}
+     <!-- .render_props outputs JSON serialized props.
+     This allows you to reuse the encoded form of your props on the client-side.
+     -->
+      <script>
+        var myProps = {{ my_component.render_props }};
+      </script>
+  </body>
+</html>
+```

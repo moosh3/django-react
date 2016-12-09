@@ -1,3 +1,0 @@
-Django==1.10.3
-react-render-client==1.0.0
-requests==2.12.0
