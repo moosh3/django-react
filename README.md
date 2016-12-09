@@ -7,37 +7,6 @@ This project is an example of using react components using this package. It uses
 
 https://github.com/owais/django-webpack-loader
 
-### JSX
-
-JSX is a javascript extension that looks like XML but can render both HTML and React components. It is reccommended due to its more concise and familiar syntax for definging tree structures with attributes -- this is the equivilant to the props argument using react-python.
-
-```javascript
-var Nav, Profile;
-// Input (JSX):
-var app = <Nav color="blue"><Profile>click</Profile></Nav>;
-// Output (JS):
-var app = React.createElement(
-  Nav,
-  {color:"blue"},
-  React.createElement(Profile, null, "click")
-);
-```
-
-Example of a form written in JSX
-
-```javascript
-var Form = MyFormComponent;
-
-var App = (
-  <Form>
-    <Form.Row>
-      <Form.Label />
-      <Form.Input />
-    </Form.Row>
-  </Form>
-);
-```
-
 ### Dependencies
 
 The purpose of python-react is to replace the django template system with react components. The package has multiple node dependencies, and requires a render server in order to render the components on the server-side. So, implementing this package would affect:
@@ -50,7 +19,6 @@ The purpose of python-react is to replace the django template system with react 
 
 python-react takes a dictionary of data that can be passed through the renderer for use on the client side, i.e.:
 
-
 ```Javascript
 render_component(
     path='',
@@ -58,9 +26,8 @@ render_component(
     props={
         'foo': 'bar'
     },
+)
 ```
-
-Another package that renders React components on the server is [react-render](https://github.com/mic159/react-render). It inherits much of its code from python-react, but is specific to Django projects.
 
 ### django-webpack-loader
 
